@@ -13,6 +13,8 @@ public class Card {
     public Card() {
         suit = "heart"; //default value
         value = 10;
+        rank = "ace";
+        picName = "ah.gif";
     }
 
     public Card(String suit, String rank, int value, String picName) {
@@ -58,12 +60,12 @@ public class Card {
     }
 
     
-    public boolean eqals(Card other) {
+    public boolean equals(Card other) {
         return rank.equals(other.rank);
     }
 
     //string method (4)
     public String toString() {
-        return "suit " + suit + " value" + value + " rank" + rank;
+        return "Suit: " + suit + ", Rank: " + rank + ", Value: " + value + ", Image: " + picName;
     }
 }
