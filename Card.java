@@ -1,4 +1,6 @@
 //Jesus Coria - Richard Manzo
+import java.util.ArrayList;
+import java.util.HashMap;
 public class Card {
 
     //data variables
@@ -24,8 +26,8 @@ public class Card {
         this.picName = picName;
     }
 
-    //setters and getters
-    //setters (4)
+    //**setters and getters**//
+    //setters
     public void setSuit(String suit) {
         this.suit = suit;
     }
@@ -42,7 +44,7 @@ public class Card {
         this.picName = picName;
     }
 
-    //getters (4)
+    //getters
     public String getSuit () {
         return suit;
     }
@@ -64,8 +66,9 @@ public class Card {
         return rank.equals(other.rank);
     }
 
-    //string method (4)
+    //string method
     public String toString() {
         return "Suit: " + suit + ", Rank: " + rank + ", Value: " + value + ", Image: " + picName;
     }
+    
 }
